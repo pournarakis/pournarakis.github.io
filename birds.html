@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,10 +11,10 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Birds Project</title>
-	
-	<!-- Font Awsome CSS -->
-	<link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
+
+    <!-- Font Awsome CSS -->
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
 
@@ -32,389 +33,457 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-
-    
+<body>
 
     <div class="container">
 
-<div id="Wrapper"> 
-                
-                <div class="Content" id="LayoutColumn2"><div class="Block Breadcrumb Moveable Panel" id="PageBreadcrumb"> <div class="breadcrumbs"><ul><li class="home"><a href="https://www.aaastateofplay.com/" title="Go to Home Page">Home</a></li><li class="cms_page"><a href="https://www.aaastateofplay.com/how-tos-and-guides/" title="How-To's & Guides">How-To's & Guides</a></li><li><strong>50 Bird Species and the Sounds They Make</strong></li></li></ul></div></div>
-				<div class="Block Moveable Panel" id="PageContent">
-                                        <div class="Block"><audio>
-    <source src="">
-    <source src="">
-    Your browser does not support the audio element.
-</audio>
-<script type="text/javascript">
-    jQuery.noConflict();
-    console.log(11);
-    jQuery(window).load(function(){
-        jQuery('.play').click(function(){
-            let $this = jQuery(this),
-                audioElement = document.getElementsByTagName('audio')[0],
-                audioID = "sound" + jQuery(this).attr('id'),
-                audioInfo = jQuery("#" + audioID + ' source'),
-                mp3url = audioInfo[0].src,
-                ogurl = audioInfo[1].src,
-                audioSources = document.getElementsByTagName('audio')[0].getElementsByTagName('source');
-            audioSources[0].setAttribute('src', mp3url);
-            audioSources[1].setAttribute('src', ogurl);
-            jQuery('.play').not(this).removeClass('active')
-            $this.toggleClass('active');
-            if($this.hasClass('active')){
-                audioElement.load();
-                audioElement.currentTime = 0;
-                audioElement.play();
-            } else {
-                audioElement.pause();
-            }
-        });
-    });
-</script>
+        <div id="Wrapper">
 
-<style>
-    .map-wrapper {	width:100%;	}
-    .map-wrapper img[usemap] { border:none; height:auto;	max-width:100%;	width:auto;	}
-    .map-wrapper area {cursor:pointer;}
-    .audio_source{display: none;}
-</style>
-<div class="pagecont">
-    <p>  <center><strong>Click any bird to hear the sounds they make! Click a second time to pause the sound.</strong></center>
-    </p>
-    <div class="map-wrapper">
-        <img src="https://www.aaastateofplay.com/media/50-bird-species-sounds-they-make.png" title="50 Bird Species and The Sounds They Make" alt="50 Bird Species and The Sounds They Make" width="1200" height="3641" usemap="
-	Map"/>
-        <map name="ImageMap" id="ImageMap">
-            <area class="play" id="1" alt="American Goldfinch" title="American Goldfinch" coords="18,233,239,540" shape="rect">
-            <area class="play" id="2" alt="American Robin" title="American Robin" coords="254,234,474,543" shape="rect">
-            <area class="play" id="3" alt="Asian Koel" title="Asian Koel" coords="488,234,711,546" shape="rect">
-            <area class="play" id="4" alt="Atlantic Puffin" title="Atlantic Puffin" coords="725,234,949,544" shape="rect">
-            <area class="play" id="5" alt="Bald Eagle" title="Bald Eagle" coords="962,236,1186,546" shape="rect">
-            <area class="play" id="6" alt="Barn Owl" title="Barn Owl" coords="18,564,240,872" shape="rect">
-            <area class="play" id="7" alt="Barn Swallow" title="Barn Swallow" coords="255,565,473,868" shape="rect">
-            <area class="play" id="8" alt="Black-Capped Chickadee" title="Black-Capped Chickadee" coords="492,562,713,872" shape="rect">
-            <area class="play" id="9" alt="Blue Jay" title="Blue Jay" coords="726,562,946,870" shape="rect">
-            <area class="play" id="10" alt="Canada Goose" title="Canada Goose" coords="963,564,1186,872" shape="rect">
-            <area class="play" id="11" alt="Canary (Common)" title="Canary (Common)" coords="21,893,242,1196" shape="rect">
-            <area class="play" id="12" alt="Cardinal" title="Cardinal" coords="255,893,474,1198" shape="rect">
-            <area class="play" id="13" alt="Common Wood Pigeon" title="Common Wood Pigeon" coords="491,889,713,1201" shape="rect">
-            <area class="play" id="14" alt="Crow (American)" title="Crow (American)" coords="728,890,947,1201" shape="rect">
-            <area class="play" id="15" alt="Cuckoo" title="Cuckoo" coords="962,889,1184,1198" shape="rect">
-            <area class="play" id="16" alt="Eurasian Wren" title="Eurasian Wren" coords="19,1218,242,1526" shape="rect">
-            <area class="play" id="17" alt="European Robin" title="European Robin" coords="255,1216,473,1524" shape="rect">
-            <area class="play" id="18" alt="Flamingo (American)" title="Flamingo (American)" coords="489,1216,711,1523" shape="rect">
-            <area class="play" id="19" alt="Horned Lark" title="Horned Lark" coords="728,1217,947,1529" shape="rect">
-            <area class="play" id="20" alt="Horned Owl" title="Horned Owl" coords="965,1217,1183,1527" shape="rect">
-            <area class="play" id="21" alt="House Sparrow" title="House Sparrow" coords="19,1544,242,1854" shape="rect">
-            <area class="play" id="22" alt="Hyacinth Macaw" title="Hyacinth Macaw" coords="254,1544,476,1851" shape="rect">
-            <area class="play" id="23" alt="Indigo Bunting" title="Indigo Bunting" coords="489,1541,713,1855" shape="rect">
-            <area class="play" id="24" alt="Laughing Kookaburra" title="Laughing Kookaburra" coords="725,1542,949,1855" shape="rect">
-            <area class="play" id="25" alt="Loon (Common)" title="Loon (Common)" coords="962,1542,1186,1852" shape="rect">
-            <area class="play" id="26" alt="Magellanic Penguin" title="Magellanic Penguin" coords="19,1870,239,2176" shape="rect">
-            <area class="play" id="27" alt="Mallard Duck" title="Mallard Duck" coords="254,1869,477,2177" shape="rect">
-            <area class="play" id="28" alt="Mourning Dove" title="Mourning Dove" coords="489,1867,711,2177" shape="rect">
-            <area class="play" id="29" alt="Nightingale (Common)" title="Nightingale (Common)" coords="728,1867,950,2176" shape="rect">
-            <area class="play" id="30" alt="Northern Flicker" title="Northern Flicker" coords="960,1867,1186,2179" shape="rect">
-            <area class="play" id="31" alt="Northern Mockingbird" title="Northern Mockingbird" coords="18,2194,240,2500" shape="rect">
-            <area class="play" id="32" alt="Osprey" title="Osprey" coords="252,2191,479,2501" shape="rect">
-            <area class="play" id="33" alt="Parakeet (Budgerigar)" title="Parakeet (Budgerigar)" coords="489,2191,710,2501" shape="rect">
-            <area class="play" id="34" alt="Peafowl (Common)" title="Peafowl (Common)" coords="726,2192,947,2501" shape="rect">
-            <area class="play" id="35" alt="Pileated Woodpecker" title="Pileated Woodpecker" coords="960,2192,1190,2503" shape="rect">
-            <area class="play" id="36" alt="Purple Martin" title="Purple Martin" coords="15,2519,243,2831" shape="rect">
-            <area class="play" id="37" alt="Raven (Common)" title="Raven (Common)" coords="255,2519,474,2829" shape="rect">
-            <area class="play" id="38" alt="Red-Winged Blackbird" title="Red-Winged Blackbird" coords="489,2516,713,2831" shape="rect">
-            <area class="play" id="39" alt="Rock Dove" title="Rock Dove" coords="723,2516,947,2829" shape="rect">
-            <area class="play" id="40" alt="Rooster" title="Rooster" coords="963,2518,1189,2832" shape="rect">
-            <area class="play" id="41" alt="Snipe (Common)" title="Snipe (Common)" coords="15,2841,242,3153" shape="rect">
-            <area class="play" id="42" alt="Song Thrush" title="Song Thrush" coords="252,2843,477,3156" shape="rect">
-            <area class="play" id="43" alt="Starling (Common)" title="Starling (Common)" coords="488,2841,713,3154" shape="rect">
-            <area class="play" id="44" alt="Swift (Common)" title="Swift (Common)" coords="725,2844,947,3153" shape="rect">
-            <area class="play" id="45" alt="Tern (Common)" title="Tern (Common)" coords="963,2844,1187,3154" shape="rect">
-            <area class="play" id="46" alt="Tufted Titmouse" title="Tufted Titmouse" coords="18,3169,240,3481" shape="rect">
-            <area class="play" id="47" alt="Turkey (Wild)" title="Turkey (Wild)" coords="254,3168,474,3480" shape="rect">
-            <area class="play" id="48" alt="Veery" title="Veery" coords="489,3169,713,3480" shape="rect">
-            <area class="play" id="49" alt="Whooper Swan" title="Whooper Swan" coords="723,3165,947,3482" shape="rect">
-            <area class="play" id="50" alt="Wood Thrush" title="Wood Thrush" coords="962,3169,1184,3477" shape="rect">
-        </map>
-    </div>
-    <div class="audio_source" id="sound1">
-        <source src="https://www.aaastateofplay.com/media/audio/american-goldfinch.mp3">
-        <source src="https://www.aaastateofplay.com/media/audio/american-goldfinch.ogg">
+            <div class="Content" id="LayoutColumn2">
 
-    </div>
+                <div class="Block Moveable Panel" id="PageContent">
+                    <div class="Block">
+                        <audio>
+                            <source src="">
+                            <source src=""> Your browser does not support the audio element.
+                        </audio>
+                        <script type="text/javascript">
+                            jQuery.noConflict();
+                            console.log(11);
+                            jQuery(window).load(function() {
+                                jQuery('.play').click(function() {
+                                    let $this = jQuery(this),
+                                        audioElement = document.getElementsByTagName('audio')[0],
+                                        audioID = "sound" + jQuery(this).attr('id'),
+                                        audioInfo = jQuery("#" + audioID + ' source'),
+                                        mp3url = audioInfo[0].src,
+                                        ogurl = audioInfo[1].src,
+                                        audioSources = document.getElementsByTagName('audio')[0].getElementsByTagName('source');
+                                    audioSources[0].setAttribute('src', mp3url);
+                                    audioSources[1].setAttribute('src', ogurl);
+                                    jQuery('.play').not(this).removeClass('active')
+                                    $this.toggleClass('active');
+                                    if ($this.hasClass('active')) {
+                                        audioElement.load();
+                                        audioElement.currentTime = 0;
+                                        audioElement.play();
+                                    } else {
+                                        audioElement.pause();
+                                    }
+                                });
+                            });
+                        </script>
 
-    <div class="audio_source" id="sound2">
-        <source src="/media/audio/american-robin.mp3">
-        <source src="/media/audio/american-robin.ogg">
-    </div>
+                        <style>
+                            .map-wrapper {
+                                width: 100%;
+                            }
+                            
+                            .map-wrapper img[usemap] {
+                                border: none;
+                                height: auto;
+                                max-width: 100%;
+                                width: auto;
+                            }
+                            
+                            .map-wrapper area {
+                                cursor: pointer;
+                            }
+                            
+                            .audio_source {
+                                display: none;
+                            }
+                        </style>
+                        <div class="pagecont">
+                            <p>
+                                <center><strong>Click any bird to hear the sounds they make! Click a second time to pause the sound.</strong></center>
+                            </p>
+                            <div class="map-wrapper">
+                                <img src="https://www.aaastateofplay.com/media/50-bird-species-sounds-they-make.png" title="50 Bird Species and The Sounds They Make" alt="50 Bird Species and The Sounds They Make" width="1200" height="3641" usemap="
+	Map" />
+                                <map name="ImageMap" id="ImageMap">
+                                    <area class="play" id="1" alt="American Goldfinch" title="American Goldfinch" coords="18,233,239,540" shape="rect">
+                                    <area class="play" id="2" alt="American Robin" title="American Robin" coords="254,234,474,543" shape="rect">
+                                    <area class="play" id="3" alt="Asian Koel" title="Asian Koel" coords="488,234,711,546" shape="rect">
+                                    <area class="play" id="4" alt="Atlantic Puffin" title="Atlantic Puffin" coords="725,234,949,544" shape="rect">
+                                    <area class="play" id="5" alt="Bald Eagle" title="Bald Eagle" coords="962,236,1186,546" shape="rect">
+                                    <area class="play" id="6" alt="Barn Owl" title="Barn Owl" coords="18,564,240,872" shape="rect">
+                                    <area class="play" id="7" alt="Barn Swallow" title="Barn Swallow" coords="255,565,473,868" shape="rect">
+                                    <area class="play" id="8" alt="Black-Capped Chickadee" title="Black-Capped Chickadee" coords="492,562,713,872" shape="rect">
+                                    <area class="play" id="9" alt="Blue Jay" title="Blue Jay" coords="726,562,946,870" shape="rect">
+                                    <area class="play" id="10" alt="Canada Goose" title="Canada Goose" coords="963,564,1186,872" shape="rect">
+                                    <area class="play" id="11" alt="Canary (Common)" title="Canary (Common)" coords="21,893,242,1196" shape="rect">
+                                    <area class="play" id="12" alt="Cardinal" title="Cardinal" coords="255,893,474,1198" shape="rect">
+                                    <area class="play" id="13" alt="Common Wood Pigeon" title="Common Wood Pigeon" coords="491,889,713,1201" shape="rect">
+                                    <area class="play" id="14" alt="Crow (American)" title="Crow (American)" coords="728,890,947,1201" shape="rect">
+                                    <area class="play" id="15" alt="Cuckoo" title="Cuckoo" coords="962,889,1184,1198" shape="rect">
+                                    <area class="play" id="16" alt="Eurasian Wren" title="Eurasian Wren" coords="19,1218,242,1526" shape="rect">
+                                    <area class="play" id="17" alt="European Robin" title="European Robin" coords="255,1216,473,1524" shape="rect">
+                                    <area class="play" id="18" alt="Flamingo (American)" title="Flamingo (American)" coords="489,1216,711,1523" shape="rect">
+                                    <area class="play" id="19" alt="Horned Lark" title="Horned Lark" coords="728,1217,947,1529" shape="rect">
+                                    <area class="play" id="20" alt="Horned Owl" title="Horned Owl" coords="965,1217,1183,1527" shape="rect">
+                                    <area class="play" id="21" alt="House Sparrow" title="House Sparrow" coords="19,1544,242,1854" shape="rect">
+                                    <area class="play" id="22" alt="Hyacinth Macaw" title="Hyacinth Macaw" coords="254,1544,476,1851" shape="rect">
+                                    <area class="play" id="23" alt="Indigo Bunting" title="Indigo Bunting" coords="489,1541,713,1855" shape="rect">
+                                    <area class="play" id="24" alt="Laughing Kookaburra" title="Laughing Kookaburra" coords="725,1542,949,1855" shape="rect">
+                                    <area class="play" id="25" alt="Loon (Common)" title="Loon (Common)" coords="962,1542,1186,1852" shape="rect">
+                                    <area class="play" id="26" alt="Magellanic Penguin" title="Magellanic Penguin" coords="19,1870,239,2176" shape="rect">
+                                    <area class="play" id="27" alt="Mallard Duck" title="Mallard Duck" coords="254,1869,477,2177" shape="rect">
+                                    <area class="play" id="28" alt="Mourning Dove" title="Mourning Dove" coords="489,1867,711,2177" shape="rect">
+                                    <area class="play" id="29" alt="Nightingale (Common)" title="Nightingale (Common)" coords="728,1867,950,2176" shape="rect">
+                                    <area class="play" id="30" alt="Northern Flicker" title="Northern Flicker" coords="960,1867,1186,2179" shape="rect">
+                                    <area class="play" id="31" alt="Northern Mockingbird" title="Northern Mockingbird" coords="18,2194,240,2500" shape="rect">
+                                    <area class="play" id="32" alt="Osprey" title="Osprey" coords="252,2191,479,2501" shape="rect">
+                                    <area class="play" id="33" alt="Parakeet (Budgerigar)" title="Parakeet (Budgerigar)" coords="489,2191,710,2501" shape="rect">
+                                    <area class="play" id="34" alt="Peafowl (Common)" title="Peafowl (Common)" coords="726,2192,947,2501" shape="rect">
+                                    <area class="play" id="35" alt="Pileated Woodpecker" title="Pileated Woodpecker" coords="960,2192,1190,2503" shape="rect">
+                                    <area class="play" id="36" alt="Purple Martin" title="Purple Martin" coords="15,2519,243,2831" shape="rect">
+                                    <area class="play" id="37" alt="Raven (Common)" title="Raven (Common)" coords="255,2519,474,2829" shape="rect">
+                                    <area class="play" id="38" alt="Red-Winged Blackbird" title="Red-Winged Blackbird" coords="489,2516,713,2831" shape="rect">
+                                    <area class="play" id="39" alt="Rock Dove" title="Rock Dove" coords="723,2516,947,2829" shape="rect">
+                                    <area class="play" id="40" alt="Rooster" title="Rooster" coords="963,2518,1189,2832" shape="rect">
+                                    <area class="play" id="41" alt="Snipe (Common)" title="Snipe (Common)" coords="15,2841,242,3153" shape="rect">
+                                    <area class="play" id="42" alt="Song Thrush" title="Song Thrush" coords="252,2843,477,3156" shape="rect">
+                                    <area class="play" id="43" alt="Starling (Common)" title="Starling (Common)" coords="488,2841,713,3154" shape="rect">
+                                    <area class="play" id="44" alt="Swift (Common)" title="Swift (Common)" coords="725,2844,947,3153" shape="rect">
+                                    <area class="play" id="45" alt="Tern (Common)" title="Tern (Common)" coords="963,2844,1187,3154" shape="rect">
+                                    <area class="play" id="46" alt="Tufted Titmouse" title="Tufted Titmouse" coords="18,3169,240,3481" shape="rect">
+                                    <area class="play" id="47" alt="Turkey (Wild)" title="Turkey (Wild)" coords="254,3168,474,3480" shape="rect">
+                                    <area class="play" id="48" alt="Veery" title="Veery" coords="489,3169,713,3480" shape="rect">
+                                    <area class="play" id="49" alt="Whooper Swan" title="Whooper Swan" coords="723,3165,947,3482" shape="rect">
+                                    <area class="play" id="50" alt="Wood Thrush" title="Wood Thrush" coords="962,3169,1184,3477" shape="rect">
+                                </map>
+                            </div>
+                            <div class="audio_source" id="sound1">
+                                <source src="https://www.aaastateofplay.com/media/audio/american-goldfinch.mp3">
+                                <source src="https://www.aaastateofplay.com/media/audio/american-goldfinch.ogg">
 
-    <div class="audio_source" id="sound3">
-        <source src="/media/audio/asian-koel.mp3">
-        <source src="/media/audio/asian-koel.ogg">
-    </div>
+                            </div>
 
-    <div class="audio_source" id="sound4">
-        <source src="/media/audio/atlantic-puffin.mp3">
-        <source src="/media/audio/atlantic-puffin.ogg">
-    </div>
+                            <div class="audio_source" id="sound2">
+                                <source src="/media/audio/american-robin.mp3">
+                                <source src="/media/audio/american-robin.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound5">
-        <source src="/media/audio/bald-eagle.mp3">
-        <source src="/media/audio/bald-eagle.ogg">
-    </div>
+                            <div class="audio_source" id="sound3">
+                                <source src="/media/audio/asian-koel.mp3">
+                                <source src="/media/audio/asian-koel.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound6">
-        <source src="/media/audio/barn-owl.mp3">
-        <source src="/media/audio/barn-owl.ogg">
-    </div>
+                            <div class="audio_source" id="sound4">
+                                <source src="/media/audio/atlantic-puffin.mp3">
+                                <source src="/media/audio/atlantic-puffin.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound7">
-        <source src="/media/audio/barn-swallow.mp3">
-        <source src="/media/audio/barn-swallow.ogg">
-    </div>
+                            <div class="audio_source" id="sound5">
+                                <source src="/media/audio/bald-eagle.mp3">
+                                <source src="/media/audio/bald-eagle.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound8">
-        <source src="/media/audio/black-capped-chickadee.mp3">
-        <source src="/media/audio/black-capped-chickadee.ogg">
-    </div>
+                            <div class="audio_source" id="sound6">
+                                <source src="/media/audio/barn-owl.mp3">
+                                <source src="/media/audio/barn-owl.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound9">
-        <source src="/media/audio/blue-jay.mp3">
-        <source src="/media/audio/blue-jay.ogg">
-    </div>
+                            <div class="audio_source" id="sound7">
+                                <source src="/media/audio/barn-swallow.mp3">
+                                <source src="/media/audio/barn-swallow.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound10">
-        <source src="/media/audio/canada-goose.mp3">
-        <source src="/media/audio/canada-goose.ogg">
-    </div>
+                            <div class="audio_source" id="sound8">
+                                <source src="/media/audio/black-capped-chickadee.mp3">
+                                <source src="/media/audio/black-capped-chickadee.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound11">
-        <source src="/media/audio/canary.mp3">
-        <source src="/media/audio/canary.ogg">
-    </div>
+                            <div class="audio_source" id="sound9">
+                                <source src="/media/audio/blue-jay.mp3">
+                                <source src="/media/audio/blue-jay.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound12">
-        <source src="/media/audio/cardinal.mp3">
-        <source src="/media/audio/cardinal.ogg">
-    </div>
+                            <div class="audio_source" id="sound10">
+                                <source src="/media/audio/canada-goose.mp3">
+                                <source src="/media/audio/canada-goose.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound13">
-        <source src="/media/audio/common-wood-pigeon.mp3">
-        <source src="/media/audio/common-wood-pigeon.ogg">
-    </div>
+                            <div class="audio_source" id="sound11">
+                                <source src="/media/audio/canary.mp3">
+                                <source src="/media/audio/canary.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound14">
-        <source src="/media/audio/crow.mp3">
-        <source src="/media/audio/crow.ogg">
-    </div>
+                            <div class="audio_source" id="sound12">
+                                <source src="/media/audio/cardinal.mp3">
+                                <source src="/media/audio/cardinal.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound15">
-        <source src="/media/audio/cuckoo.mp3">
-        <source src="/media/audio/cuckoo.ogg">
-    </div>
+                            <div class="audio_source" id="sound13">
+                                <source src="/media/audio/common-wood-pigeon.mp3">
+                                <source src="/media/audio/common-wood-pigeon.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound16">
-        <source src="/media/audio/eurasian-wren.mp3">
-        <source src="/media/audio/eurasian-wren.ogg">
-    </div>
+                            <div class="audio_source" id="sound14">
+                                <source src="/media/audio/crow.mp3">
+                                <source src="/media/audio/crow.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound17">
-        <source src="/media/audio/european-robin.mp3">
-        <source src="/media/audio/european-robin.ogg">
-    </div>
+                            <div class="audio_source" id="sound15">
+                                <source src="/media/audio/cuckoo.mp3">
+                                <source src="/media/audio/cuckoo.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound18">
-        <source src="/media/audio/flamingo.mp3">
-        <source src="/media/audio/flamingo.ogg">
-    </div>
+                            <div class="audio_source" id="sound16">
+                                <source src="/media/audio/eurasian-wren.mp3">
+                                <source src="/media/audio/eurasian-wren.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound19">
-        <source src="/media/audio/horned-lark.mp3">
-        <source src="/media/audio/horned-lark.ogg">
-    </div>
+                            <div class="audio_source" id="sound17">
+                                <source src="/media/audio/european-robin.mp3">
+                                <source src="/media/audio/european-robin.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound20">
-        <source src="/media/audio/horned-owl.mp3">
-        <source src="/media/audio/horned-owl.ogg">
-    </div>
+                            <div class="audio_source" id="sound18">
+                                <source src="/media/audio/flamingo.mp3">
+                                <source src="/media/audio/flamingo.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound21">
-        <source src="/media/audio/house-sparrow.mp3">
-        <source src="/media/audio/house-sparrow.ogg">
-    </div>
+                            <div class="audio_source" id="sound19">
+                                <source src="/media/audio/horned-lark.mp3">
+                                <source src="/media/audio/horned-lark.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound22">
-        <source src="/media/audio/hyacinth-macaw.mp3">
-        <source src="/media/audio/hyacinth-macaw.ogg">
-    </div>
+                            <div class="audio_source" id="sound20">
+                                <source src="/media/audio/horned-owl.mp3">
+                                <source src="/media/audio/horned-owl.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound23">
-        <source src="/media/audio/indigo-bunting.mp3">
-        <source src="/media/audio/indigo-bunting.ogg">
-    </div>
+                            <div class="audio_source" id="sound21">
+                                <source src="/media/audio/house-sparrow.mp3">
+                                <source src="/media/audio/house-sparrow.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound24">
-        <source src="/media/audio/laughing-kookaburra.mp3">
-        <source src="/media/audio/laughing-kookaburra.ogg">
-    </div>
+                            <div class="audio_source" id="sound22">
+                                <source src="/media/audio/hyacinth-macaw.mp3">
+                                <source src="/media/audio/hyacinth-macaw.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound25">
-        <source src="/media/audio/loon.mp3">
-        <source src="/media/audio/loon.ogg">
-    </div>
+                            <div class="audio_source" id="sound23">
+                                <source src="/media/audio/indigo-bunting.mp3">
+                                <source src="/media/audio/indigo-bunting.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound26">
-        <source src="/media/audio/magellanic-penguin.mp3">
-        <source src="/media/audio/magellanic-penguin.ogg">
-    </div>
+                            <div class="audio_source" id="sound24">
+                                <source src="/media/audio/laughing-kookaburra.mp3">
+                                <source src="/media/audio/laughing-kookaburra.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound27">
-        <source src="/media/audio/mallard-duck.mp3">
-        <source src="/media/audio/mallard-duck.ogg">
-    </div>
+                            <div class="audio_source" id="sound25">
+                                <source src="/media/audio/loon.mp3">
+                                <source src="/media/audio/loon.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound28">
-        <source src="/media/audio/mourning-dove.oga">
-        <source src="/media/audio/mourning-dove.oga">
-    </div>
+                            <div class="audio_source" id="sound26">
+                                <source src="/media/audio/magellanic-penguin.mp3">
+                                <source src="/media/audio/magellanic-penguin.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound29">
-        <source src="/media/audio/nightingale.mp3">
-        <source src="/media/audio/nightingale.ogg">
-    </div>
+                            <div class="audio_source" id="sound27">
+                                <source src="/media/audio/mallard-duck.mp3">
+                                <source src="/media/audio/mallard-duck.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound30">
-        <source src="/media/audio/northern-flicker.mp3">
-        <source src="/media/audio/northern-flicker.ogg">
-    </div>
+                            <div class="audio_source" id="sound28">
+                                <source src="/media/audio/mourning-dove.oga">
+                                <source src="/media/audio/mourning-dove.oga">
+                            </div>
 
-    <div class="audio_source" id="sound31">
-        <source src="/media/audio/northern-mockingbird.mp3">
-        <source src="/media/audio/northern-mockingbird.ogg">
-    </div>
+                            <div class="audio_source" id="sound29">
+                                <source src="/media/audio/nightingale.mp3">
+                                <source src="/media/audio/nightingale.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound32">
-        <source src="/media/audio/osprey.mp3">
-        <source src="/media/audio/osprey.ogg">
-    </div>
+                            <div class="audio_source" id="sound30">
+                                <source src="/media/audio/northern-flicker.mp3">
+                                <source src="/media/audio/northern-flicker.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound33">
-        <source src="/media/audio/parakeet.mp3">
-        <source src="/media/audio/parakeet.ogg">
-    </div>
+                            <div class="audio_source" id="sound31">
+                                <source src="/media/audio/northern-mockingbird.mp3">
+                                <source src="/media/audio/northern-mockingbird.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound34">
-        <source src="/media/audio/peafowl.mp3">
-        <source src="/media/audio/peafowl.ogg">
-    </div>
+                            <div class="audio_source" id="sound32">
+                                <source src="/media/audio/osprey.mp3">
+                                <source src="/media/audio/osprey.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound35">
-        <source src="/media/audio/pileated-woodpecker.mp3">
-        <source src="/media/audio/pileated-woodpecker.ogg">
-    </div>
+                            <div class="audio_source" id="sound33">
+                                <source src="/media/audio/parakeet.mp3">
+                                <source src="/media/audio/parakeet.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound36">
-        <source src="/media/audio/purple-martin.mp3">
-        <source src="/media/audio/purple-martin.ogg">
-    </div>
+                            <div class="audio_source" id="sound34">
+                                <source src="/media/audio/peafowl.mp3">
+                                <source src="/media/audio/peafowl.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound37">
-        <source src="/media/audio/raven.mp3">
-        <source src="/media/audio/raven.ogg">
-    </div>
+                            <div class="audio_source" id="sound35">
+                                <source src="/media/audio/pileated-woodpecker.mp3">
+                                <source src="/media/audio/pileated-woodpecker.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound38">
-        <source src="/media/audio/red-winged-blackbird.mp3">
-        <source src="/media/audio/red-winged-blackbird.ogg">
-    </div>
+                            <div class="audio_source" id="sound36">
+                                <source src="/media/audio/purple-martin.mp3">
+                                <source src="/media/audio/purple-martin.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound39">
-        <source src="/media/audio/rock-dove.mp3">
-        <source src="/media/audio/rock-dove.ogg">
-    </div>
+                            <div class="audio_source" id="sound37">
+                                <source src="/media/audio/raven.mp3">
+                                <source src="/media/audio/raven.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound40">
-        <source src="/media/audio/rooster.mp3">
-        <source src="/media/audio/rooster.ogg">
-    </div>
+                            <div class="audio_source" id="sound38">
+                                <source src="/media/audio/red-winged-blackbird.mp3">
+                                <source src="/media/audio/red-winged-blackbird.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound41">
-        <source src="/media/audio/snipe.mp3">
-        <source src="/media/audio/snipe.ogg">
-    </div>
+                            <div class="audio_source" id="sound39">
+                                <source src="/media/audio/rock-dove.mp3">
+                                <source src="/media/audio/rock-dove.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound42">
-        <source src="/media/audio/song-thrush.mp3">
-        <source src="/media/audio/song-thrush.ogg">
-    </div>
+                            <div class="audio_source" id="sound40">
+                                <source src="/media/audio/rooster.mp3">
+                                <source src="/media/audio/rooster.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound43">
-        <source src="/media/audio/starling.mp3">
-        <source src="/media/audio/starling.ogg">
-    </div>
+                            <div class="audio_source" id="sound41">
+                                <source src="/media/audio/snipe.mp3">
+                                <source src="/media/audio/snipe.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound44">
-        <source src="/media/audio/swift.mp3">
-        <source src="/media/audio/swift.ogg">
-    </div>
+                            <div class="audio_source" id="sound42">
+                                <source src="/media/audio/song-thrush.mp3">
+                                <source src="/media/audio/song-thrush.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound45">
-        <source src="/media/audio/tern.mp3">
-        <source src="/media/audio/tern.ogg">
-    </div>
+                            <div class="audio_source" id="sound43">
+                                <source src="/media/audio/starling.mp3">
+                                <source src="/media/audio/starling.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound46">
-        <source src="/media/audio/tufted-titmouse.mp3">
-        <source src="/media/audio/tufted-titmouse.ogg">
-    </div>
+                            <div class="audio_source" id="sound44">
+                                <source src="/media/audio/swift.mp3">
+                                <source src="/media/audio/swift.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound47">
-        <source src="/media/audio/turkey.mp3">
-        <source src="/media/audio/turkey.ogg">
-    </div>
+                            <div class="audio_source" id="sound45">
+                                <source src="/media/audio/tern.mp3">
+                                <source src="/media/audio/tern.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound48">
-        <source src="/media/audio/veery.mp3">
-        <source src="/media/audio/veery.ogg">
-    </div>
+                            <div class="audio_source" id="sound46">
+                                <source src="/media/audio/tufted-titmouse.mp3">
+                                <source src="/media/audio/tufted-titmouse.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound49">
-        <source src="/media/audio/whooper-swan.mp3">
-        <source src="/media/audio/whooper-swan.ogg">
-    </div>
+                            <div class="audio_source" id="sound47">
+                                <source src="/media/audio/turkey.mp3">
+                                <source src="/media/audio/turkey.ogg">
+                            </div>
 
-    <div class="audio_source" id="sound50">
-        <source src="/media/audio/wood-thrush.mp3">
-        <source src="/media/audio/wood-thrush.ogg">
-    </div>
+                            <div class="audio_source" id="sound48">
+                                <source src="/media/audio/veery.mp3">
+                                <source src="/media/audio/veery.ogg">
+                            </div>
 
+                            <div class="audio_source" id="sound49">
+                                <source src="/media/audio/whooper-swan.mp3">
+                                <source src="/media/audio/whooper-swan.ogg">
+                            </div>
 
+                            <div class="audio_source" id="sound50">
+                                <source src="/media/audio/wood-thrush.mp3">
+                                <source src="/media/audio/wood-thrush.ogg">
+                            </div>
 
-    <script>;(function(a){a.fn.rwdImageMaps=function(){var c=this;var b=function(){c.each(function(){if(typeof(a(this).attr("usemap"))=="undefined"){return}var e=this,d=a(e);a("<img />").on('load',function(){var g="width",m="height",n=d.attr(g),j=d.attr(m);if(!n||!j){var o=new Image();o.src=d.attr("src");if(!n){n=o.width}if(!j){j=o.height}}var f=d.width()/100,k=d.height()/100,i=d.attr("usemap").replace("#",""),l="coords";a('map[name="'+i+'"]').find("area").each(function(){var r=a(this);if(!r.data(l)){r.data(l,r.attr(l))}var q=r.data(l).split(","),p=new Array(q.length);for(var h=0;h<p.length;++h){if(h%2===0){p[h]=parseInt(((q[h]/n)*100)*f)}else{p[h]=parseInt(((q[h]/j)*100)*k)}}r.attr(l,p.toString())})}).attr("src",d.attr("src"))})};a(window).resize(b).trigger("resize");return this}})(jQuery);</script>
-    <script>
-        jQuery(document).ready(function(e) {
-            jQuery('img[usemap]').rwdImageMaps();
-        });
-    </script>
-    <br/><br/>
-    <p><center><strong>Click any bird to hear the sounds they make! Click a second time to pause the sound.</strong></center></p>
-    <p>Use our quick, clickable guide for identifying backyard birds by the sounds they make! Chose any of these popular species to hear its typical bird sounds, from vocalizations of parrots to the chirping of songbirds. As you?re gardening in your backyard or wandering in the woods, you might be able to use our guide to identify a few distinctive bird calls. Identification of songbird sounds has a rich history; in the past, it was fairly complicated and frequently required <a href="http://web.stanford.edu/~kendric/birds/birdsong.html" rel="nofollow">mnemonics</a>. For instance, the blue jay is recognized for singing ?queedle, queedle, queedle,? and the mourning dove sound can be written as ?hooo-ah hoo-hoo-hoo.? The northern flicker sounds like ?squeechu-squeechu-squeechu,? which might be easy to confuse with ?queedle? unless you?ve heard it in the wild yourself! It?s also helpful to consider where you are when you?re trying to identify birds; check out the maps to see if a particular bird is actually found in your area.
-    </p>
-              
-				
-    </div><!-- /.container -->
+                            <script>
+                                ;
+                                (function(a) {
+                                    a.fn.rwdImageMaps = function() {
+                                        var c = this;
+                                        var b = function() {
+                                            c.each(function() {
+                                                if (typeof(a(this).attr("usemap")) == "undefined") {
+                                                    return
+                                                }
+                                                var e = this,
+                                                    d = a(e);
+                                                a("<img />").on('load', function() {
+                                                    var g = "width",
+                                                        m = "height",
+                                                        n = d.attr(g),
+                                                        j = d.attr(m);
+                                                    if (!n || !j) {
+                                                        var o = new Image();
+                                                        o.src = d.attr("src");
+                                                        if (!n) {
+                                                            n = o.width
+                                                        }
+                                                        if (!j) {
+                                                            j = o.height
+                                                        }
+                                                    }
+                                                    var f = d.width() / 100,
+                                                        k = d.height() / 100,
+                                                        i = d.attr("usemap").replace("#", ""),
+                                                        l = "coords";
+                                                    a('map[name="' + i + '"]').find("area").each(function() {
+                                                        var r = a(this);
+                                                        if (!r.data(l)) {
+                                                            r.data(l, r.attr(l))
+                                                        }
+                                                        var q = r.data(l).split(","),
+                                                            p = new Array(q.length);
+                                                        for (var h = 0; h < p.length; ++h) {
+                                                            if (h % 2 === 0) {
+                                                                p[h] = parseInt(((q[h] / n) * 100) * f)
+                                                            } else {
+                                                                p[h] = parseInt(((q[h] / j) * 100) * k)
+                                                            }
+                                                        }
+                                                        r.attr(l, p.toString())
+                                                    })
+                                                }).attr("src", d.attr("src"))
+                                            })
+                                        };
+                                        a(window).resize(b).trigger("resize");
+                                        return this
+                                    }
+                                })(jQuery);
+                            </script>
+                            <script>
+                                jQuery(document).ready(function(e) {
+                                    jQuery('img[usemap]').rwdImageMaps();
+                                });
+                            </script>
+                            <br/>
+                        </div>
+                    </div>
 
-    <!-- Bootstrap core JavaScript
+                </div>
+                <!-- /.container -->
+
+                <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+                <!-- Placed at the end of the document so the pages load faster -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script>
+                    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+                </script>
+                <script src="/js/bootstrap.min.js"></script>
+                <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+                <script src="/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
 </html>
